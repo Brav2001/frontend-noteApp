@@ -2,7 +2,7 @@ import { z } from "zod";
 
 const noteSchema = z.object({
   title: z.string().max(255),
-  description: z.string().max(255),
+  description: z.string(),
 });
 
 export const validateNote = (object) => {
